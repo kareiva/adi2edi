@@ -7,14 +7,23 @@ Provide ADIF format as STDIN to this script or give a filename as `argv[1]`.
 If the ADIF input is correct, it will produce a minimalistic EDI log file
 with calculated QRB (claimed points)
 
+# INSTALLATION
+
+adi2edi requires Python3 - run the below commands:
+
+    python3 -m venv venv
+    source ven/bin/activate
+    pip install -r requirements.txt
+
+
 # TODO:
 - Check for new WWL's during the log generation
 - Support RTTY/FT8 modes
 - Multiply claimed points by band multiplier
 
-# EXAMPLES:
+# EXAMPLE USAGE:
 
-    adi2edi.py < logfile.adif > logfile.edi
+    ./adi2edi.py < logfile.adif > logfile.edi
 
 # REFERENCES:
 
