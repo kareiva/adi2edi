@@ -26,6 +26,7 @@ REFERENCES:
 
 """
 from datetime import date
+from typing import List
 import maidenhead as mh
 import geopy.distance
 import adif_io
@@ -67,11 +68,11 @@ def print_reg1test_qsos(qsos):
 
         new_square = ""
         qrb = get_distance(my_gridsquare, qso_grid)
-
+        qso_time = q["TIME_ON"][:4]
         print(
             "{};{};{};{};{};;{};;;{};{};;{};;".format(
                 q["QSO_DATE"][2:],
-                q["TIME_ON"],
+                qso_time,
                 q["CALL"],
                 qso_mode,
                 q["RST_SENT"],
