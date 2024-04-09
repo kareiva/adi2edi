@@ -12,7 +12,7 @@ with calculated QRB (claimed points)
 adi2edi requires Python3 - run the below commands:
 
     python3 -m venv venv
-    source ven/bin/activate
+    source venv/bin/activate
     pip install -r requirements.txt
 
 
